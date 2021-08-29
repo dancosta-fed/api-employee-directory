@@ -1,0 +1,105 @@
+body {
+  position: relative;
+  background: #fff;
+  background-image: linear-gradient(#D9E8F5, #fff);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+
+.search {
+  height: 25px;
+  width: 35vw;
+  padding-left: 7px;
+  border-radius: 5px;
+  align-self: center;
+  border-image: linear-gradient(#fff, #D9E8F5);
+}
+.search:hover {
+  box-shadow: 2px 4px 8px #D9E8F5;
+  transform: scale(1.03);
+  border: #F26101;
+}
+
+h1 {
+  font-family: "roboto", "arial";
+  color: #fff;
+  text-shadow: 2px 2px #39AEB3;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+p, h2 {
+  color: #39AEB3;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #D9E8F5;
+}
+
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #91BED4;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 25%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 30px;
+}
+
+.card {
+  background-image: linear-gradient(#D9E8F5, #fff);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid #39AEB3;
+  border-image: linear-gradient(#D9E8F5, #fff);
+  transition: all 0.2s ease-in-out;
+  padding: 15px;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 2px 4px 8px #D9E8F5;
+  transform: scale(1.03);
+}
+
+.card p, h2 {
+  margin: 5px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

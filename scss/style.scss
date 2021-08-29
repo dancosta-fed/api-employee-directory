@@ -1,0 +1,114 @@
+$background-color: #D9E8F5;
+$white: #fff;
+$second-color: #91BED4;
+$third-color: #39AEB3;
+$selection: #F26101;
+$font: 'roboto', 'arial';
+
+
+body {
+    position: relative;
+    background: $white;
+    background-image: linear-gradient($background-color, $white);
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+    
+    .search {
+        height: 25px;
+        width: 35vw;
+        padding-left: 7px;
+        border-radius: 5px;
+        align-self: center;
+        border-image: linear-gradient($white, $background-color);
+
+        &:hover{
+            box-shadow: 2px 4px 8px $background-color;
+            transform: scale(1.03);
+            border:$selection;
+        }
+    }
+
+    h1 {
+        font-family: $font;
+        color: $white;
+        text-shadow: 2px 2px $third-color;
+        text-align: center;
+    }
+
+    h2 {
+    font-size: 1.2em;
+    }
+
+    p, h2 {
+        color: $third-color;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $background-color;
+        }
+
+    .modal {
+        width: 375px;
+        margin: 15% auto auto;
+        position: relative;
+        text-align: center;
+        background: $white;
+        border: 1px solid $second-color;
+        border-radius: 5px;
+        padding: 30px 20px;
+    }
+    
+    .modal-close {
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        cursor: pointer;
+        }
+
+    .hidden {
+            display: none;
+            }
+
+    .avatar{
+        border-radius: 50%;
+        width: 25%;
+            }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+        grid-template-rows: auto 1fr auto;
+        grid-gap: 30px;
+    }
+
+    .card{
+        //background: $background-color;
+        background-image: linear-gradient($background-color, $white);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        border: 2px solid $third-color;
+        border-image: linear-gradient($background-color, $white);
+        transition: all .2s ease-in-out;
+        padding: 15px;
+        cursor: pointer;
+
+        &:hover{
+            box-shadow: 2px 4px 8px $background-color;
+            transform: scale(1.03);
+        }
+    }
+    
+    .card p, h2{
+        margin: 5px 0;
+    }
