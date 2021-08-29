@@ -43,6 +43,11 @@ h1 {
   color: #fff;
   text-shadow: 2px 2px #39aeb3;
   text-align: center;
+  margin-top: 0px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 
 h2 {
@@ -123,13 +128,7 @@ p, h2 {
 }
 
 section {
-  display: flex;
-  justify-content: center;
   padding-top: 15px;
-}
-
-.myCard {
-  align-self: center;
 }
 
 .backToTop {
@@ -155,6 +154,27 @@ section {
 }
 .email:hover {
   color: #F26101;
+}
+
+.myPhoto {
+  width: 5%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 2fr;
+}
+
+.myCard {
+  display: flex;
+  margin: 1em;
+  margin-bottom: 1px;
+}
+
+.myName {
+  padding-left: 1em;
+  padding-top: 1em;
 }
 
 #arrow {
@@ -183,6 +203,28 @@ section {
 .left {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+}
+
+/* ============================================= */
+/*              MEDIA QUERIES                    */
+/* ============================================= */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .myPhoto {
+    display: none;
+  }
+
+  .myCard {
+    padding-left: 4em;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .myPhoto {
+    display: none;
+  }
+
+  .myCard {
+    padding-left: 18em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
