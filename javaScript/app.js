@@ -60,7 +60,7 @@ function displayEmployees(employeeData) {
   <img class="avatar" src="${picture.large}" />
   <div class="text-container">
   <h2 class="name">${name.first} ${name.last}</h2>
-  <p class="email">${email}</p>
+  <a href="mailto:email@example.com" class="email">${email}</a>
   <p class="address">${city}</p>
   </div>
   </div>
@@ -83,7 +83,7 @@ function displayModal(index) {
   <img class="avatar" src="${picture.large}" />
   <div class="text-container">
   <h2 class="name">${name.first} ${name.last}</h2>
-  <p class="email">${email}</p>
+  <a href="mailto:email@example.com" class="email">${email}</a>
   <p class="address">${city}</p>
   <hr />
   <p>${phone}</p>

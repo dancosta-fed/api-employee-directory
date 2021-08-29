@@ -139,6 +139,15 @@ body {
     .card p, h2{
         margin: 5px 0;
     }
+    section{
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    .myCard {
+        align-self: center;
+    }
 
     .backToTop {
         display: flex;
@@ -159,6 +168,15 @@ body {
             color: $selection;
         }
     }
+
+.email {
+    color:$third-color;
+    text-decoration: none;
+
+    &:hover{
+        color: $selection;
+    }
+}
 
 //===== Arrow === //
 

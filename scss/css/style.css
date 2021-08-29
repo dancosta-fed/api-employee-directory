@@ -122,6 +122,16 @@ p, h2 {
   margin: 5px 0;
 }
 
+section {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.myCard {
+  align-self: center;
+}
+
 .backToTop {
   display: flex;
   justify-content: flex-end;
@@ -136,6 +146,14 @@ p, h2 {
 #myBtn:hover {
   box-shadow: 2px 4px 8px #D9E8F5;
   border: 1px solid #39aeb3 !important;
+  color: #F26101;
+}
+
+.email {
+  color: #39aeb3;
+  text-decoration: none;
+}
+.email:hover {
   color: #F26101;
 }
 
