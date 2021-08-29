@@ -1,15 +1,20 @@
 $background-color: #D9E8F5;
 $white: #fff;
 $second-color: #91BED4;
-$third-color: #39AEB3;
+$third-color: #39aeb3;
 $selection: #F26101;
 $font: 'roboto', 'arial';
 
+
+/*================================================================================ */
+/*================================================================================ */
 
 body {
     position: relative;
     background: $white;
     background-image: linear-gradient($background-color, $white);
+    padding-left: 2em;
+    padding-right: 2em;
     }
 
     header {
@@ -31,6 +36,19 @@ body {
             transform: scale(1.03);
             border:$selection;
         }
+
+         &:focus {
+            border: 1px solid $third-color !important;
+            box-shadow: 0 0 3px $third-color !important;
+            -moz-box-shadow: 0 0 3px $third-color !important;
+            -webkit-box-shadow: 0 0 3px $third-color !important;
+            }
+
+         &:focus {
+            outline-offset: 0px !important;
+            outline: none !important;
+         }
+
     }
 
     h1 {
@@ -54,7 +72,7 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        background: $background-color;
+        background: rgba(57, 174, 179, 0.4);
         }
 
     .modal {
@@ -66,6 +84,7 @@ body {
         border: 1px solid $second-color;
         border-radius: 5px;
         padding: 30px 20px;
+
     }
     
     .modal-close {
@@ -73,7 +92,15 @@ body {
         right: 15px;
         top: 5px;
         cursor: pointer;
+        border: 1px none $third-color !important;
+        color: $third-color;
+        margin-top: 10px;
+        
+        &:hover {
+        color: $selection;
         }
+
+    }
 
     .hidden {
             display: none;
@@ -112,3 +139,56 @@ body {
     .card p, h2{
         margin: 5px 0;
     }
+
+    .backToTop {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1.5em;
+    }
+
+    #myBtn {
+        color: $third-color;
+        background-image: linear-gradient($background-color, $white);
+        border: 1px none $third-color !important;
+        
+        
+        
+        &:hover{
+            box-shadow: 2px 4px 8px $background-color;
+            border: 1px solid $third-color !important;
+            color: $selection;
+        }
+    }
+
+//===== Arrow === //
+
+#arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid $third-color;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    
+    &:hover{
+        border: solid $selection;
+        border-width: 0 3px 3px 0;
+    }
+}
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  

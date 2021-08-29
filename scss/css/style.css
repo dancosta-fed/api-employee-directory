@@ -1,7 +1,11 @@
+/*================================================================================ */
+/*================================================================================ */
 body {
   position: relative;
   background: #fff;
   background-image: linear-gradient(#D9E8F5, #fff);
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 header {
@@ -23,11 +27,21 @@ header {
   transform: scale(1.03);
   border: #F26101;
 }
+.search:focus {
+  border: 1px solid #39aeb3 !important;
+  box-shadow: 0 0 3px #39aeb3 !important;
+  -moz-box-shadow: 0 0 3px #39aeb3 !important;
+  -webkit-box-shadow: 0 0 3px #39aeb3 !important;
+}
+.search:focus {
+  outline-offset: 0px !important;
+  outline: none !important;
+}
 
 h1 {
   font-family: "roboto", "arial";
   color: #fff;
-  text-shadow: 2px 2px #39AEB3;
+  text-shadow: 2px 2px #39aeb3;
   text-align: center;
 }
 
@@ -36,7 +50,7 @@ h2 {
 }
 
 p, h2 {
-  color: #39AEB3;
+  color: #39aeb3;
 }
 
 .overlay {
@@ -45,7 +59,7 @@ p, h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #D9E8F5;
+  background: rgba(57, 174, 179, 0.4);
 }
 
 .modal {
@@ -64,6 +78,12 @@ p, h2 {
   right: 15px;
   top: 5px;
   cursor: pointer;
+  border: 1px none #39aeb3 !important;
+  color: #39aeb3;
+  margin-top: 10px;
+}
+.modal-close:hover {
+  color: #F26101;
 }
 
 .hidden {
@@ -87,7 +107,7 @@ p, h2 {
   border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
-  border: 2px solid #39AEB3;
+  border: 2px solid #39aeb3;
   border-image: linear-gradient(#D9E8F5, #fff);
   transition: all 0.2s ease-in-out;
   padding: 15px;
@@ -100,6 +120,51 @@ p, h2 {
 
 .card p, h2 {
   margin: 5px 0;
+}
+
+.backToTop {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5em;
+}
+
+#myBtn {
+  color: #39aeb3;
+  background-image: linear-gradient(#D9E8F5, #fff);
+  border: 1px none #39aeb3 !important;
+}
+#myBtn:hover {
+  box-shadow: 2px 4px 8px #D9E8F5;
+  border: 1px solid #39aeb3 !important;
+  color: #F26101;
+}
+
+#arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.arrow {
+  border: solid #39aeb3;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.arrow:hover {
+  border: solid #F26101;
+  border-width: 0 3px 3px 0;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 
 /*# sourceMappingURL=style.css.map */

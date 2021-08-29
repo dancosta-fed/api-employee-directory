@@ -10,144 +10,30 @@
 
 <body>
     <header>
-    <h1>Dan Costa Startup Employee Directory</h1>
-    <input placeholder="Search" class="search" id="search">
+        <a name="top"></a>
+        <h1>Dan Costa Startup Employee Directory</h1>
+        <input placeholder="Search" class="search" id="search">
     </header>
     <main class="grid-container">
-   
-        <div class="card">
-            <img class="avatar" src="img/danProfile.JPG" />
-            <div class="text-container">
-            <h2 class="name">Dan Costa</h2>
-            <p class="email">dancosta.id@gmail.com</p>
-            <p class="address">Queenstown</p>
-            </div>
-        </div>
-        <!-- place holders below -->
-        <div class="card">
-            <img class="avatar" src="img/danProfile.JPG" />
-            <div class="text-container">
-            <h2 class="name">Dan Costa</h2>
-            <p class="email">dancosta.id@gmail.com</p>
-            <p class="address">Queenstown</p>
-            </div>
-        </div>
+        <!-- Js info will go in here -->
+     </main>
+     
+     <div class="overlay hidden">
+         <div class="modal">
+             <button class="modal-close">X</button>
+             <div class="modal-content">
+             <!-- modal info will be added here with JS -->
+             </div>
 
-        <div class="card">
-            <img class="avatar" src="img/danProfile.JPG" />
-            <div class="text-container">
-            <h2 class="name">Dan Costa</h2>
-            <p class="email">dancosta.id@gmail.com</p>
-            <p class="address">Queenstown</p>
-            </div>
-        </div>
+             <div class="arrows" id="arrow">
+                <p> <i class="arrow left aLeft"></i></p> <p> <i class="arrow right aRight"></i></p>
+             </div>    
+         </div>
+     </div>
 
-        <div class="card">
-            <img class="avatar" src="img/danProfile.JPG" />
-            <div class="text-container">
-            <h2 class="name">Dan Costa</h2>
-            <p class="email">dancosta.id@gmail.com</p>
-            <p class="address">Queenstown</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="avatar" src="img/danProfile.JPG" />
-            <div class="text-container">
-            <h2 class="name">Dan Costa</h2>
-            <p class="email">dancosta.id@gmail.com</p>
-            <p class="address">Queenstown</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="avatar" src="img/danProfile.JPG" />
-            <div class="text-container">
-            <h2 class="name">Dan Costa</h2>
-            <p class="email">dancosta.id@gmail.com</p>
-            <p class="address">Queenstown</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="avatar" src="img/danProfile.JPG" />
-            <div class="text-container">
-            <h2 class="name">Dan Costa</h2>
-            <p class="email">dancosta.id@gmail.com</p>
-            <p class="address">Queenstown</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="avatar" src="img/danProfile.JPG" />
-            <div class="text-container">
-            <h2 class="name">Dan Costa</h2>
-            <p class="email">dancosta.id@gmail.com</p>
-            <p class="address">Queenstown</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="avatar" src="img/danProfile.JPG" />
-            <div class="text-container">
-            <h2 class="name">Dan Costa</h2>
-            <p class="email">dancosta.id@gmail.com</p>
-            <p class="address">Queenstown</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="avatar" src="img/danProfile.JPG" />
-            <div class="text-container">
-            <h2 class="name">Dan Costa</h2>
-            <p class="email">dancosta.id@gmail.com</p>
-            <p class="address">Queenstown</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="avatar" src="img/danProfile.JPG" />
-            <div class="text-container">
-            <h2 class="name">Dan Costa</h2>
-            <p class="email">dancosta.id@gmail.com</p>
-            <p class="address">Queenstown</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="avatar" src="img/danProfile.JPG" />
-            <div class="text-container">
-            <h2 class="name">Dan Costa</h2>
-            <p class="email">dancosta.id@gmail.com</p>
-            <p class="address">Queenstown</p>
-            </div>
-        </div>
-      
-        <div class="overlay hidden">
-
-            <div class="modal">
-            <button class="modal-close">X</button>
-            <div class="modal-content">
-
-                <!-- modal information will be added with JS here -->
-
-                <img class="avatar" src="member-1.jpg" />
-                <div class="text-container">
-                    <h2 class="name">Dan Costa</h2>
-                    <p class="email">dancosta.id@gmail.com</p>
-                    <p class="address">Queenstown</p>
-                    <hr />
-                    <p>(027) 1234-5678</p>
-                    <p class="address">123 Anywhere St, QT 9300</p>
-                    <p>Birthday: 04/02/89</p>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        </main>
-
-
-
-
+     <div class="backToTop">
+         <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+     </div>
+        
+        <script src="app.js"></script>
 </body>    
