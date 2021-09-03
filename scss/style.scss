@@ -33,7 +33,7 @@ body {
 
         &:hover{
             box-shadow: 2px 4px 8px $background-color;
-            transform: scale(1.03);
+            //transform: scale(1.03);
             border:$selection;
         }
 
@@ -234,24 +234,9 @@ body {
 /*              MEDIA QUERIES                    */
 /* ============================================= */
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px)  {
-    .myPhoto {
-        display: none;
-    }
-    .myCard {
-        padding-left: 4em;
-    }
-}
-
-@media only screen 
-  and (min-device-width: 768px) 
+@media only screen  
   and (max-device-width: 1024px)  {
     .myPhoto {
         display: none;
-    }
-    .myCard {
-        padding-left: 18em;
     }
 }
